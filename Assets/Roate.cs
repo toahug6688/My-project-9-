@@ -16,5 +16,7 @@ public class Rotate : MonoBehaviour
         }
         // 旋轉速度、讓輪盤旋轉
         transform.Rotate(0, 0, rotSpeed);
+        // (增加這段)讓輪盤減速
+        rotSpeed *= 0.96f;
     }
 }
